@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matières Étudiées</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: rgba(99, 4, 83, 0.9);
+            padding: 1rem 2rem;
+            box-shadow: 0px 2px 10px rgba(90, 6, 69, 0.3);
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            margin-right: 1.5rem;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #b30a75;
+        }
+
+        /* Section Matières */
+        .matieres-section {
+            background: linear-gradient(to right, #cf73b6, #f183e6);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .matieres-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .matieres-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        /* Matières et Projets */
+        .matiere-card, .projet-card {
+            background: white;
+            color: #333;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .matiere-card:hover, .projet-card:hover {
+            transform: scale(1.05);
+        }
+
+        .matiere-card h3, .projet-card h3 {
+            color: #243b55;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .matiere-card p, .projet-card p {
+            font-size: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(99, 4, 83, 0.9);
+            color: #ccc;
+            text-align: center;
+            padding: 1.5rem 0;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mon Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="parcours.html">Parcours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="competences.html">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="stages.html">Stages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="evenements.html">Événements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="matieres.html">Matières/projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="passions.html">Passions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="temoignage.html">témoignage IIT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Matières Étudiées -->
+    <section class="matieres-section">
+        <h1>Les Matières Que J'ai Étudiées</h1>
+        <p>Voici une liste des matières étudiées au cours de mon parcours universitaire ainsi que des exemples de projets réalisés.</p>
+        
+        <div class="container">
+            <!-- Matières -->
+            <h2 class="text-center mb-4">Matières Principales</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="matiere-card">
+                        <h3>Programmation Web</h3>
+                        <p>HTML, CSS, JavaScript et introduction aux frameworks tels que Bootstrap et React.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="matiere-card">
+                        <h3>Analyse et Conception</h3>
+                        <p>UML, modélisation des systèmes et gestion des bases de données relationnelles.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="matiere-card">
+                        <h3>Algorithmes et Structures</h3>
+                        <p>Étude des algorithmes fondamentaux et des structures de données en Python.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="matiere-card">
+                        <h3>Gestion de Projet</h3>
+                        <p>Outils comme MS Project, Agile Scrum et techniques de planification.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TP / Projets -->
+            <h2 class="text-center mt-5 mb-4">TP et Projets Réalisés</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="projet-card">
+                        <h3>Site Web E-Commerce</h3>
+                        <p>Développement complet d'un site de vente en ligne avec panier et interface utilisateur.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="projet-card">
+                        <h3>Base de Données de Gestion</h3>
+                        <p>Création d'une base de données SQL pour la gestion des stocks d'une entreprise.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="projet-card">
+                        <h3>Application Python</h3>
+                        <p>Programme automatisé pour analyser et traiter les données issues d'une enquête.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="projet-card">
+                        <h3>Matière Architecture</h3>
+                        <p>Réalisation d'un projet avec Arduino pour la construction d'un système embarqué.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mon Site Personnel. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
